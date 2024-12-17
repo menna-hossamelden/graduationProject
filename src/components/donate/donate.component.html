@@ -1,0 +1,95 @@
+<div class="form-container">
+  <form id="donation-form" method="POST" novalidate>
+    <div class="instructions mb-3">
+      <p>Fill in all required fields. Fields marked with <span style="color: red;">*</span> are mandatory.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-12 mb-3">
+        <label for="fname">Full Name<span class="asterisk">*</span></label>
+        <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter your full name">
+      </div>
+
+      <div class="col-md-6 col-12 mb-3">
+        <label for="email">Email Address<span class="asterisk">*</span></label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address">
+      </div>
+
+      <div class="col-md-6 col-12 mb-3">
+        <label for="mobile">Mobile Number<span class="asterisk">*</span></label>
+        <input type="number" name="mobile" id="mobile" class="form-control" placeholder="Enter your mobile number">
+      </div>
+
+      <div class="col-md-6 col-12 mb-3">
+        <label for="country">Country<span class="asterisk">*</span></label>
+        <select name="country" id="country" class="form-control">
+          <option value="eg">Egypt</option>
+          <option value="sa">Saudi Arabia</option>
+          <option value="us">United States</option>
+          <option value="gb">United Kingdom</option>
+          <option value="ae">United Arab Emirates</option>
+          <option value="fr">France</option>
+          <option value="de">Germany</option>
+          <option value="ca">Canada</option>
+          <option value="au">Australia</option>
+          <option value="in">India</option>
+          <option value="jp">Japan</option>
+          <option value="cn">China</option>
+          <option value="br">Brazil</option>
+          <option value="za">South Africa</option>
+          <option value="ng">Nigeria</option>
+          <option value="ru">Russia</option>
+          <option value="it">Italy</option>
+          <option value="es">Spain</option>
+          <option value="kr">South Korea</option>
+          <option value="tr">Turkey</option>
+          <option value="mx">Mexico</option>
+          <!-- Add more countries as needed -->
+        </select>
+        
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6 col-12 mb-3">
+        <label for="donation">Donate to<span class="asterisk">*</span></label>
+        <select name="donation" id="donation" class="form-control">
+          <optgroup label="Donation Programs">
+            <option value="39551">Resala Charity</option>
+            <option value="38149">Ghaith Community Development</option>
+            <option value="39200">Orman Charity</option>
+            <option value="39400">Misr El Kheir Foundation</option>
+            <option value="39300">57357 Hospital</option>
+            <option value="39600">Egyptian Food Bank</option>
+            <option value="39700">Magdi Yacoub Heart Foundation</option>
+            <option value="39800">El Galaa Foundation</option>
+            <!-- Add more institutions as needed -->
+          </optgroup>
+        </select>
+        
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="address">Address</label>
+      <textarea name="address" id="address" class="form-control" placeholder="Enter your address here"></textarea>
+    </div>
+
+    <div class="form-group mb-3">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="monthly_donation" id="once" value="0" checked>
+        <label class="form-check-label" for="once">One-time Donation</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="monthly_donation" id="monthly" value="1">
+        <label class="form-check-label" for="monthly">Monthly Donation</label>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-end mt-4">
+      <button type="submit" class="btn btn-secondary text-center">
+         Submit
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,17 @@
+nav{
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.navbar,.offcanvas,.slide{
+  background-color: var(--bg-color);
+}
+.nav-item:hover{
+  color: var(--active-text-color);
+  text-decoration: underline;
+  padding: 2px;
+}
+.navbar-brand,.offcanvas-title{
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px !important;
+}

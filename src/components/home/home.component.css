@@ -1,0 +1,50 @@
+/* main section */
+.main{
+  height: 100vh;
+  background-image: url(../../../public/bg.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.main .details{
+  height: fit-content;
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  background: linear-gradient(rgba(134, 101, 75, 0.2), rgba(134, 101, 75, 0.2));
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.main .details h1{
+  font-weight: 800;
+  font-size: 50px;
+}
+.main .details p{
+  font-weight: 700;
+  font-size: 20px;
+}
+.main .details button{
+  background-color: var(--btn-main);
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+@media (max-width: 426px) {
+  .main .details h1{
+      font-weight: 700;
+      font-size: 1.5rem;
+  }
+  .main .details p{
+      font-weight: 600;
+      font-size: 1rem;
+  }
+  .main .details button{
+      font-size: 1rem;
+      font-weight: 600;
+  }
+}

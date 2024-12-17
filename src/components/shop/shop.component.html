@@ -1,0 +1,59 @@
+<div class="container">
+  <h4 class="text-center mt-3">
+    We are used lots looking for new homes; Please take care of us and give us a
+    longer life.
+  </h4>
+  <div class="row mt-4 align-items-center">
+    <!-- قسم الـ Search -->
+    <div class="col-md-3 d-flex align-items-center">
+      <p class="me-2 mb-0">Categories:</p>  <h2>
+        
+      </h2>
+      <select class="form-select" aria-label="Default select example" (change)="onCategoryChange($event)">
+        <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <input
+        class="form-control"
+        id="exampleDataList"
+        placeholder="Search..."
+      />
+    </div>
+    <!-- قسم Features -->
+    <div class="col-md-3 d-flex align-items-center">
+      <p class="me-2 mb-0">Sort by:</p>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Featured</option>
+        <option value="1">Newest Arrivals</option>
+        <option value="2">Price-Low to High</option>
+        <option value="3">Price-High to Low</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- قسم المنتجات -->
+  <div class="row g-3 mt-4 justify-content-around">
+    <div class="col-md-3" *ngFor="let prd of products"  [class.d-none]="selectedCatId !== 0 && prd.catId !== selectedCatId">
+      <div class="card" style="width: 18rem">
+        <img [src]="prd.imageUrl" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ prd.name }}</h5>
+          <p class="card-text">Price: {{ prd.price }}</p>
+          <a href="#" routerLink="/details" class="btn">View Product</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

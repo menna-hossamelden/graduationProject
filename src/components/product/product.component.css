@@ -1,0 +1,35 @@
+/* slider */
+.carousel-inner{
+  padding: 5rem;
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  background-color: var(--text-color);
+}
+.carousel .card-body{
+  color: var(--text-color);
+  text-align: center;
+}
+.carousel .card-body h2{
+  font-weight: 400;
+}
+.carousel .card-body .stars{
+  color: rgb(255, 176, 65);
+}
+.carousel .card-body .btn{
+  margin-top: 5px;
+  background-color: var(--btn-main);
+  color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+@media (max-width: 769px) {
+  .carousel-inner .carousel-item div{
+      flex-wrap: wrap;
+  }
+  .carousel-inner .carousel-item div div{
+      margin-top: 10px;
+  }
+}

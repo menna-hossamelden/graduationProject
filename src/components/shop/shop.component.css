@@ -1,0 +1,53 @@
+.card {
+  border: 1px solid #ddd; /* حدود خفيفة للكروت */
+  border-radius: 8px; /* زوايا دائرية */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* تأثير ظل */
+}
+
+.btn {
+  border: black 1px solid;
+  width: 150px;
+  color: black;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #86654b;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+p{
+  font-weight:bolder ;
+}
+.form-select,
+.form-control {
+  height: 45px;
+  border-radius: 8px;
+}
+select.form-select {
+  border: black 1px solid; /* حدود سوداء */
+  width: 180px; /* عرض محدد */
+  padding: 3px; /* مسافة داخلية */
+  background-color: white; /* خلفية بيضاء */
+  color: black; /* لون النص */
+  border-radius: 5px; /* زوايا دائرية */
+  font-size: 16px; /* حجم النص */
+  cursor: pointer; /* مؤشر عند التحويم */
+}
+
+/* تأثير التحويم على الـ <select> */
+select.form-select:hover {
+  color: white; /* لون النص عند التحويم */
+  background-color: #86654b; /* لون الخلفية عند التحويم */
+}
+
+/* تنسيق الخيارات الداخلية (option) */
+select.form-select option{
+  background-color: white; /* خلفية الخيارات */
+  color: black; /* لون النص للخيارات */
+  padding: 5px; /* تحسين المظهر الداخلي */
+}

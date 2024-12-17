@@ -1,0 +1,13 @@
+/* footer */
+.footer{
+  background-color: var(--btn-main);
+  color: #fff;
+}
+@media (max-width: 425px) {
+  .contact,.footer{
+      flex-wrap: wrap;
+  }
+  .contact div,.footer div{
+      margin-top: 10px;
+  }
+}
