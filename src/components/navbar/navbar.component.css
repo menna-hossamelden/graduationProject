@@ -15,3 +15,10 @@ nav{
   font-style: normal;
   font-size: 30px !important;
 }
+form button{
+  background-color: white;
+}
+form button:hover{
+  background-color: #86654b;
+  color: white;
+}

@@ -1,0 +1,33 @@
+<div class="form-container">
+    <form id="login-form" method="POST" novalidate>
+      <div class="instructions mb-3">
+        <p>Fill in your login credentials. Fields marked with <span style="color: red;">*</span> are mandatory.</p>
+      </div>
+  
+      <div class="mb-3">
+        <label for="email">Email Address<span class="asterisk">*</span></label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address" required>
+      </div>
+  
+      <div class="mb-3">
+        <label for="password">Password<span class="asterisk">*</span></label>
+        <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+  
+      <div class="form-group mb-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="remember" id="remember">
+          <label class="form-check-label" for="remember">Remember Me</label>
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-end mt-4">
+        <button type="submit" class="btn btn-secondary text-center">Login</button>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <p>Don’t have an account? <a href="/sign-up" class="signup-link">Sign up here</a>.</p>
+      </div>
+      
+    </form>
+  </div>
+  
