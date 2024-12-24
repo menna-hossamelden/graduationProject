@@ -8,6 +8,7 @@ import { DetailsComponent } from './components/details/details.component';
 import { DonateComponent } from './components/donate/donate.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent }, // Home كصفحة افتراضية
@@ -16,6 +17,7 @@ export const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactUsComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'product-form', component: ProductFormComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'donate', component: DonateComponent },
   {path: 'details', component:DetailsComponent},

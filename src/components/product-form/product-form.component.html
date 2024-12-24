@@ -1,0 +1,49 @@
+<div class="form-container">
+    <form id="product-form" method="POST" enctype="multipart/form-data" novalidate>
+      <div class="instructions mb-3">
+        <p>Fill in all required fields. Fields marked with <span style="color: red;">*</span> are mandatory.</p>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-6 col-12 mb-3">
+          <label for="product-name">Product Name<span class="asterisk">*</span></label>
+          <input type="text" name="product-name" id="product-name" class="form-control" placeholder="Enter product name">
+        </div>
+  
+        <div class="col-md-6 col-12 mb-3">
+          <label for="price">Price<span class="asterisk">*</span></label>
+          <input type="number" name="price" id="price" class="form-control" placeholder="Enter product price">
+        </div>
+  
+        <div class="col-md-6 col-12 mb-3">
+          <label for="size">Size<span class="asterisk">*</span></label>
+          <input type="text" name="size" id="size" class="form-control" placeholder="Enter product size (e.g., S, M, L)">
+        </div>
+  
+        <div class="col-md-6 col-12 mb-3">
+          <label for="color">Color<span class="asterisk">*</span></label>
+          <input type="text" name="color" id="color" class="form-control" placeholder="Enter product color">
+        </div>
+  
+        <div class="col-12 mb-3">
+          <label for="condition">Condition<span class="asterisk">*</span></label>
+          <select name="condition" id="condition" class="form-control">
+            <option value="new">New</option>
+            <option value="used">Used</option>
+          </select>
+        </div>
+  
+        <div class="col-12 mb-3">
+          <label for="image">Upload Image<span class="asterisk">*</span></label>
+          <input type="file" name="image" id="image" class="form-control" />
+        </div>
+      </div>
+  
+      <div class="d-flex justify-content-end mt-4">
+        <button type="submit" class="btn btn-secondary text-center">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  
